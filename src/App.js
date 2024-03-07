@@ -1,9 +1,9 @@
 import "./App.css";
-
+import { HomePage } from "./exports/exports";
 function App() {
   return (
     <div className="App">
-      <h1>Relasto</h1>
+      <HomePage />
     </div>
   );
 }
