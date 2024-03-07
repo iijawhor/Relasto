@@ -1,0 +1,282 @@
+.propertyDetail {
+  background-color: var(--bg-light-peach);
+}
+.propertyDetailContainer {
+  width: 75%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.propertyDetailImageContainer {
+  position: relative;
+}
+.propertyDetailImageContainer > img {
+  width: 100%;
+  height: 500px;
+}
+.propertyDetailInformation {
+  display: flex;
+  align-items: self-start;
+  position: relative;
+  gap: 30px;
+}
+.propertyInformations {
+  border: 1px solid var(--txt-light-gray);
+  padding: 5px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.propertyInformations {
+  flex: 2;
+}
+
+.propertyDetailInformation {
+  position: relative;
+}
+.propertyInformations,
+.propertyInformationHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.propertInformationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.propertyInformations {
+}
+
+.propertyInformationHeader {
+  gap: 15px;
+}
+.propertyInformationHeader > .PropertyName,
+.propertyAddress {
+  font-size: var(--font-size-big);
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+  line-height: 1.3em;
+}
+.propertyAddress,
+.propertyPricing {
+  display: flex;
+  gap: 20px;
+  font-size: var(--font-size);
+  font-weight: var(--font-bold-third);
+}
+.propertyPricing > p {
+  border: 1px solid var(--txt-gray);
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  gap: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.propertyPricingText {
+  font-size: var(--font-size-extra-small);
+}
+/*  */
+.propertyDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.propertyDescriptionTitle,
+.propertyDescriptionDetail {
+  font-size: var(--font-size-small);
+  margin-left: 10px;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+  font-weight: 550;
+  font-family: sans-serif;
+}
+.propertyDescriptionDetail {
+  font-weight: lighter;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+  font-size: var(--font-size-extra-small);
+}
+.propertyLocalInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.propertyLocalInformation > ul {
+  display: flex;
+  gap: 20px;
+}
+.propertyLocalInformation > ul > li {
+  border: 1px solid var(--bg-dark-gray);
+  padding: 8px 15px;
+  border-radius: 10px;
+  min-width: 80px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: var(--font-size-extra-small);
+}
+.activeLocalInformation {
+  background-color: black;
+  color: white;
+}
+.propertyLocalInformationMap {
+  height: 330px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: 1px;
+}
+.propertyLocalInformationMap > img {
+  width: 100%;
+  height: 100%;
+}
+.propertyHighlights {
+  border: 1px solid var(--txt-light-gray);
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.propertyHighlightsTitle {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-bold-second);
+  letter-spacing: 0.3px;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+.propertyHightLightInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.propertyHightLightInfo > ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: disc !important;
+}
+.propertyHightLightInfo > ul > li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  list-style: disc !important;
+}
+.propertyHightLightInfo > ul > li > p {
+  width: 80px;
+  text-align: start;
+}
+.propertyHightLightInfo > ul > li > span {
+  font-weight: var(--font-bold-second);
+}
+.propertyAgentInformation {
+  position: relative;
+  padding: 30px;
+  border: var(--bg-dark-gray);
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.propertyAgentDetails {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.propertyAgentImage {
+  position: relative;
+  width: fit-content;
+}
+
+.propertyAgentImage > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+}
+.propertyAgentDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.porpertyAgentName {
+  font-size: var(--font-size);
+  letter-spacing: 1px;
+}
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--txt-gray);
+}
+.agentEmail,
+.agentPhoneNumber {
+  font-size: var(--font-size-small);
+  color: var(--txt-gray);
+  letter-spacing: 1px;
+}
+.propertyVisitingFormContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--bg-dark-gray);
+  flex: 1;
+  min-width: 30%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.propertyVisitingFormContainerTitle {
+  font-size: var(--font-size-big);
+  font-family: system-ui;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.propertyVisitingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.propertyVisitingFormNameInput {
+  border: 1px solid var(--bg-dark-gray);
+  /* padding: 5px; */
+  margin: 10px 0;
+}
+.fieldset {
+  border: 1px solid var(--txt-light-gray);
+  border-radius: 10px;
+}
+.legend {
+  padding: 0 5px;
+  margin-left: 10px;
+  font-size: var(--font-size-small);
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.propertyDetailFormInput {
+  padding: 8px;
+}
+.propertyDetailFormInput::placeholder {
+  font-size: var(--font-size-extra-small);
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+}
+.propertyDetailFormTextarea {
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px auto;
+  outline: none;
+}

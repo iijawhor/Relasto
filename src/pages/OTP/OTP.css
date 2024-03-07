@@ -1,0 +1,76 @@
+.OtpContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.otp {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.otpHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.otpHeader > h1 {
+  font-size: var(--font-size-small);
+  letter-spacing: 1px;
+}
+.otpHeader > p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.otpContainer {
+  margin: 15px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.otpContainer > li {
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: var(--font-size);
+  cursor: pointer;
+  border: 1px solid var(--bg-gray);
+  box-shadow: 5px;
+}
+.otpConfirmButton,
+.requestOtpButton {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.6px;
+  border-radius: 10px;
+}
+.requestOtpButton {
+  background: none;
+  border: 1px solid var(--bg-gray);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: black;
+  font-size: var(--font-size-extra-small);
+  border-bottom: 1px solid var(--bg-gray);
+}
+.optToNavigateToLoginButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: var(--font-size-small);
+}
+.optToNavigateToLoginButton > span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .otp {
+    width: 95%;
+  }
+}

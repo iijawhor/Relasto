@@ -1,0 +1,93 @@
+.footer {
+  position: relative;
+  background-color: var(--bg-light-gray);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 70%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.footerItemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.siteDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.footerAddress {
+  margin-bottom: 10px;
+}
+.footerAddress,
+.footerPhone,
+.footerEmail {
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-bold-second);
+  letter-spacing: 0.3px;
+  font-weight: 550;
+}
+.footerPhone {
+}
+
+.socialConnects {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footerSocialIcon {
+  font-size: var(--font-size-big) !important;
+  color: var(--txt-orange);
+  background: none;
+  cursor: pointer;
+}
+/*  */
+.footerItemContainer > h4 {
+  font-size: var(--font-size);
+  letter-spacing: 1px;
+  font-family: system-ui;
+  font-weight: 600;
+}
+.footerItems {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+}
+.footerItems > li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 1px;
+}
+.footerCopyright {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-small);
+  font-family: sans-serif;
+  margin: 50px 0 20px 0;
+  color: var(--txt-orange);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 520px) {
+  .footerContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

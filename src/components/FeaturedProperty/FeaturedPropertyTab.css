@@ -1,0 +1,6 @@
+@media screen and (max-width: 960px) {
+  .featuredPropertyCards {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

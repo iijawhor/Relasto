@@ -1,0 +1,75 @@
+@media screen and (max-width: 600px) {
+  .agentProfileDetailsContainer {
+    width: 98%;
+  }
+  .agentProfileHeroImage {
+    height: 120px;
+  }
+  .agentProfileDetailHeader {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .agentProfileDetailHeadernameAndReviewContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .agentProfileDetailHeadernameAndReviewContainer > img {
+    width: 100%;
+  }
+  .agentProfileHeaderContactButton {
+    width: 100%;
+    font-size: var(--font-size-small);
+  }
+  .agentProfileDetailHeaderContactDetails {
+    width: 100%;
+
+    flex-direction: column;
+  }
+  .agentProfileDetailHeaderContactDetails > p {
+    font-size: var(--font-size-extra-small);
+  }
+  .agentProfileDetails {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .agentProfileDetailsHeaderAgentInformation {
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+  }
+  .agentProfileDetailsHeaderAgentInformationNameAndReview > .riviewAndRating {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .agentProfileDetailsRight {
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .agentProfileDetailsRightContainer {
+    width: 50%;
+  }
+  .agentProfileDetailsRightContainer > h2 {
+    font-size: var(--font-size-small);
+  }
+  .agentProfileCustomerReviewsHeader,
+  .agentProfileCustomerReviewHeader {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .agentProfileCustomerReviewsHeader > h1 {
+    font-size: var(--font-size);
+  }
+  .agentProfileCustomerReviewHeader > img {
+    width: 70px;
+    height: 70px;
+  }
+  .agentProfileCustomerReview {
+    padding: 5px;
+  }
+  .agentProfileCustomerReviewDescription > p {
+    font-size: var(--font-size-extra-small);
+  }
+}

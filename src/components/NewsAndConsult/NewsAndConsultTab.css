@@ -1,0 +1,15 @@
+@media screen and (min-width: 521px) and (max-width: 920px) {
+  .newsAndConsultCards {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsAndConsultHeader > h1 {
+    font-size: var(--font-size-small);
+  }
+  .newsAndConsultHeader > div > p {
+    font-size: var(--font-size-extra-small);
+  }
+  .newsLetterContainer {
+    width: 80%;
+  }
+}

@@ -1,0 +1,218 @@
+.listing {
+  background-color: var(--bg-light-peach);
+}
+.listingContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 40px;
+  margin: auto;
+}
+.listingHeader {
+  margin: 50px 0;
+}
+.listingHeaderTitle {
+  font-size: var(--font-size-semi-large);
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.listingHeaderFilteringContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  min-width: 100%;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.listingHeaderFilteringForm {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.listingFilterInputContainer,
+.selectBedsCount,
+.selectBathroomCount {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border: 1px solid var(--txt-light-gray);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.filteringInput,
+.selectBedsCount,
+.selectBathroomCount {
+  padding: 10px;
+  font-size: var(--font-size-small);
+  letter-spacing: 1px;
+}
+.filteringInput::placeholder {
+  font-size: var(--font-size-small);
+  letter-spacing: 1px;
+}
+.searchIcon {
+  color: var(--txt-gray);
+}
+#property,
+#beds {
+  border-radius: 10px;
+  border: 1px solid var(--txt-light-gray);
+  padding: 15px;
+  display: flex;
+  background: none;
+  letter-spacing: 1px;
+  font-size: var(--font-size-small);
+  align-items: center;
+  outline: none;
+  color: var(--txt-gray);
+}
+.filteringPriceInputContainer {
+  min-width: 10%;
+  border: 1px solid var(--txt-light-gray);
+  padding: 13px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+}
+.filteringPriceInputContainer > label {
+  font-size: var(--font-size-small);
+  letter-spacing: 0.5px;
+  font-weight: var(--font-bold-third);
+  color: var(--txt-gray);
+}
+.filteringPriceInput {
+  cursor: grab;
+}
+
+.selectBedsCount,
+.selectBathroomCount {
+  width: 90px;
+  text-align: start;
+  font-size: var(--font-size-small);
+  color: var(--txt-gray);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 13px;
+}
+.filterButton {
+  padding: 13px;
+  letter-spacing: 1px;
+  font-size: var(--font-size-small);
+  background-color: black;
+  color: white;
+  width: 120px;
+  border-radius: 10px;
+}
+.selectBathroomCount {
+  width: 120px;
+}
+/* lisitng header completed */
+.listingFilteredData {
+  position: relative;
+  width: 100%;
+}
+
+.listingfilteredDataContainer {
+  margin-bottom: 50px;
+  padding: 10px;
+  gap: 10px;
+  display: grid;
+
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+.listingCardContainer {
+  border-radius: 10px;
+}
+@media screen and (max-width: 520px) {
+  .listingfilteredDataContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .filteringCredential {
+    padding: 5px;
+  }
+  .listingContainer {
+    padding: 0;
+    width: 100%;
+  }
+  #property,
+  .filteringPriceInputContainer {
+    padding: 8px;
+  }
+  .listingHeader {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 20px auto;
+    padding-left: 10px;
+  }
+  .listingHeader > h1 {
+    font-size: var(--font-size-big);
+  }
+}
+@media screen and (max-width: 290px) {
+  #property,
+  .filteringPriceInputContainer,
+  .filteringCredential {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 519px) {
+  .listingfilteredDataContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .listingContainer {
+    /* margin: 40px auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .listingHeaderFilteringContainer {
+    flex-wrap: wrap;
+  }
+  .listingfilteredDataContainer {
+    margin-left: 80px;
+  }
+}
+.listingFilteredDataPagination {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.listingFilteredDataPagination > ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.listingFilteredDataPagination > ul > li {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 550;
+  color: var(--txt-gray);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--font-size);
+  border-radius: 10px;
+  border: 1px solid var(--txt-light-gray);
+  transition: 0.3s;
+}
+.listingFilteredDataPagination > ul > li:hover {
+  border: 1px solid var(--txt-orange);
+  color: var(--txt-orange);
+}
+.listingPreviousButton,
+.listingNextButton {
+  border: 1px solid black;
+  padding: 8px 15px;
+  width: fit-content;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-family: system-ui;
+  font-size: var(--font-size-small);
+}

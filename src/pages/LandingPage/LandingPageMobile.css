@@ -1,0 +1,63 @@
+@media screen and (max-width: 560px) {
+  .landingPageHeroSectionContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .landingPageHeroSectionSearchContainerHeader > h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .landingPageHeroSectionSearchContainerHeader > p {
+    line-height: 3.5vh;
+  }
+  .landingPageHeroSectionImageContainer > img {
+    margin-left: 0px;
+  }
+  .landingPageAppointmentSectionRight {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .landingPageAppointmentSectionLeftContentCard {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+  }
+  .landingPageAppointmentSectionLeftContentCard > p {
+    font-size: 22px;
+    margin-left: 0;
+  }
+  .landingPageAppointmentSectionLeftContent {
+    margin: 20px auto;
+  }
+  .landingPageAppointmentIcon {
+    margin-left: 5px;
+  }
+  .landingPageAppointmentSectionLeftContent > h1 {
+    font-size: 1.8rem;
+  }
+  .landingPageAppointmentSectionLeftContent > p {
+    font-size: 20px;
+  }
+  .landingPageNewsAndConsultSectionContainer {
+    width: 98%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 330px) {
+  .landingPageHeroSectionContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .landingPageHeroSectionSearchContainerHeader > h1 {
+    font-size: var(--font-size-medium);
+    line-height: 5.5vh;
+  }
+  .landingPageHeroSectionSearchContainerHeader > p {
+    line-height: 4vh;
+    font-size: 20px;
+  }
+  .landingPageHeroSectionImageContainer > img {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: fit-content;
+  padding: 20px 0px;
+  background-color: #fff;
+}
+.headerNavigation {
+  position: relative;
+}
+.headerNavigationItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+.headerNavigationItems > li {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  gap: 2px;
+  text-align: center;
+  align-items: center;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-bold-fourth);
+}
+.headerNavigationItems > li:hover {
+  color: var(--txt-orange);
+}
+.headerNavIcon {
+  font-weight: 200 !important;
+  color: var(--txt-gray);
+  font-size: var(--font-size);
+}
+.headerSearchAndAuthenticationContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+.headerSearch {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid var(--txt-light-gray);
+}
+.headerSearchInput {
+  box-sizing: border-box;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+
+.searchIcon {
+  font-size: var(--font-size-big) !important;
+  color: var(--txt-gray);
+  cursor: pointer;
+}
+.headerLoginButton {
+  background-color: var(--bg-black);
+  padding: 10px;
+  width: 100px;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: var(--font-size-extra-small);
+  border-radius: 5px;
+}
+@media screen and (max-width: 920px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

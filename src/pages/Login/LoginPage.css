@@ -1,0 +1,107 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+}
+.loginHeader {
+  margin-bottom: 10px;
+}
+.loginHeader > h2 {
+  font-size: var(--font-size-small);
+  letter-spacing: -0.5px;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.loginInputContainer {
+  border: 1px solid var(--bg-gray);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+}
+.loginInput {
+  padding: 12px;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.3px;
+}
+.loginInputContainerCheckbox {
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid var(--bg-gray);
+  padding: 3px;
+  border-radius: 5px;
+  float: right;
+  width: fit-content;
+}
+.loginInputCheckBox {
+  padding: 0;
+}
+.forgotPasswordButton {
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.loginInput::placeholder {
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.3px;
+}
+.loginButton {
+  background-color: black;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.6px;
+  color: white;
+}
+.loginWithGoogleButton,
+.loginButton {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
+.loginWithGoogleButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: var(--font-size-extra-small);
+  border: 1px solid var(--bg-gray);
+  margin-bottom: 15px;
+}
+.loginIcon {
+  color: var(--bg-gray);
+}
+.navigateToCreateAccountFromloginPage {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  text-align: center;
+  font-size: var(--font-size-extra-small);
+}
+.navigateToCreateAccountFromloginPage > span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+  .login {
+    width: 98%;
+  }
+}

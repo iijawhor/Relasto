@@ -1,0 +1,68 @@
+.blogCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.blogCardImageContainer {
+  border-radius: 10px;
+}
+.blogCardBlogImage {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-position: center;
+}
+.blogCardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blogCardDetailsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.blogCardBlogCategory {
+  padding: 5px 12px;
+  border-radius: 8px;
+  letter-spacing: 0.2px;
+  width: fit-content;
+  border: 1px solid var(--bg-gray);
+  font-size: var(--font-size-extra-small);
+}
+.blogCardBlogTitle {
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.3px;
+}
+.blogCardBlogPublishDateAndRedingTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blogCardBlogPublishDateAndRedingTime > p {
+  width: fit-content;
+  font-size: 14px;
+  color: var(--txt-gray);
+  font-weight: lighter;
+}
+.continueReadingBlogButton {
+  font-size: var(--font-size-small);
+  letter-spacing: 0.5px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+  font-family: "Times New Roman", Times, serif;
+}
+.continueReadingBlogButton:hover {
+  color: var(--txt-orange);
+}
+@media screen and (max-width: 600px) {
+  .blogCardBlogImage {
+    height: 230px;
+  }
+}

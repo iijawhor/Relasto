@@ -1,0 +1,62 @@
+.featuredProperty {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+}
+.featuredPropertyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featuredPropertyHeader > h1 {
+  font-size: var(--font-size-semi-large);
+  font-weight: var(--font-bold-second);
+  letter-spacing: 0.5px;
+  color: var(--txt-black);
+}
+.featuredPropertyHeader > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.featuredPropertyHeader > div > p {
+  font-size: var(--font-size);
+  color: var(--txt-orange);
+}
+.featuredPropertyHeader > div > .exploreMoreIcon {
+  font-size: var(--font-size-semi-large);
+  color: var(--txt-orange);
+}
+/* .featuredPropertyHeader */
+.featuredPropertyNavigation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 15px;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.featuredPropertyNavigationButton {
+  font-size: var(--font-size-small);
+  color: gray;
+  font-weight: var(--font-bold-second);
+  letter-spacing: 1px;
+  /* font-family: var(--font-system-ui); */
+}
+.featuredActive {
+  color: var(--txt-orange);
+  color: var(--txt-black);
+}
+/* featuredPropertyNavigation */
+.featuredPropertyCards {
+  position: relative;
+  display: grid;
+  margin-top: 20px;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.featuredPropertyCard {
+  border-radius: 10px;
+  background-color: var(--bg-light-peach);
+}

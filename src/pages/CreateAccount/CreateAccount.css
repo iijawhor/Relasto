@@ -1,0 +1,86 @@
+.createAccountContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.createAccount {
+  position: relative;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  padding: 20px;
+}
+.createAccountHeader {
+  margin-bottom: 10px;
+}
+.createAccountHeader > h1 {
+  font-size: var(--font-size-small);
+  letter-spacing: 1px;
+}
+.createAccountForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.createAccountInputContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--bg-gray);
+  border-radius: 5px;
+}
+.createAccountInput {
+  padding: 10px;
+}
+.createAccountInput {
+  padding: 10px;
+}
+.createAccountInput {
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.3px;
+}
+.createAccountInput::placeholder {
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.5px;
+}
+.createAccountButton,
+.createAccountWithGoogle {
+  padding: 10px;
+  text-align: center;
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.3px;
+  background: #000;
+  color: white;
+  width: 100%;
+  letter-spacing: 0.6px;
+  border-radius: 10px;
+}
+.createAccountWithGoogle {
+  background: none;
+  color: black;
+  font-size: var(--font-size-extra-small);
+  margin-bottom: 10px;
+  border: 1px solid var(--bg-gray);
+}
+.navigateToLoginFromCreateAccount {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-extra-small);
+  text-align: center;
+  margin-left: 10px;
+}
+.navigateToLoginFromCreateAccount > span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .createAccount {
+    width: 95%;
+  }
+}

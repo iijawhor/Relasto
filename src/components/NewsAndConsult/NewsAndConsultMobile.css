@@ -1,0 +1,35 @@
+@media screen and (max-width: 520px) {
+  .newsAndConsultCards {
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .newsAndConsultHeader > h1 {
+    font-size: var(--font-size-small);
+  }
+  .newsAndConsultHeader > div > p {
+    font-size: var(--font-size-extra-small);
+  }
+  .newsLetterContainer {
+    width: 100%;
+  }
+  .newsLetter {
+    padding: 20px;
+  }
+  .newsLetterInput,
+  .newsLetterButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .newsLetterContainer {
+    gap: 5px;
+  }
+  .newsLetterHeader > h1 {
+    text-align: start;
+    font-size: var(--font-size-small);
+  }
+  .newsLetterHeader > p {
+    font-size: var(--font-size-extra-small);
+    width: 100%;
+    text-align: start;
+  }
+}

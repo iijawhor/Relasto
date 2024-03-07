@@ -1,0 +1,32 @@
+@media screen and (max-width: 960px) {
+  .landingPageHeroSectionContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .landingPageHeroSectionSearchFormContainer {
+    padding: 10px;
+  }
+  .landingPageHeroSectionSearchContainerHeader > h1 {
+    line-height: 5vh;
+    width: 100%;
+  }
+  .landingPageHeroSectionSearchContainerHeader > p {
+    line-height: 3vh;
+  }
+  .landingPageHeroSectionImageContainer > img {
+    margin-left: 0px;
+  }
+  /* landingPageAppointmentSection */
+  .landingPageAppointmentSection {
+    width: 90%;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .landingPageFeaturedPropertyContainer {
+    width: 100%;
+  }
+  .ladingPageFooterContainer {
+    width: 95%;
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,103 @@
+.LandingPageCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--txt-gray);
+  border-radius: 10px;
+}
+.LandingPageCardImage {
+  height: 250px;
+}
+.LandingPageCardImage > img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: center;
+  object-fit: cover;
+}
+.cardTitle {
+  margin: 5px 10px;
+  color: white;
+  font-size: var(--font-size);
+  font-family: system-ui;
+  letter-spacing: 1px;
+  color: var(--txt-light-orange);
+}
+.LandingPageCardDetails {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.LandingPageCardDetailLocation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.locationIcon {
+  color: gray;
+  font-size: var(--font-size) !important;
+}
+.LandingPageCardDetailLocation > p {
+  font-size: var(--font-size-extra-small);
+  font-weight: var(--font-bold-second);
+  letter-spacing: 0.5px;
+}
+.LandingPageCardDetailFacilities {
+  position: relative;
+  margin-top: 10px;
+}
+.LandingPageCardDetailFacilityLists {
+  display: grid;
+  gap: 11px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.LandingPageCardDetailFacilityLists > li {
+  width: fit-content;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.LandingPageCardDetailFacilityLists > li > p {
+  font-size: var(--font-size-small);
+  font-family: var(--font-system-ui);
+  font-weight: var(--font-bold-fourth);
+  letter-spacing: 1px;
+  color: gray;
+}
+.LandingPageCardDetailFacilityIcon {
+  color: var(--txt-gray);
+  font-size: var(--font-size) !important;
+}
+.LandingPageCardDetailPricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.LandingPageCardDetailPricingViewDetailsButton {
+  padding: 5px 10px;
+  font-size: var(--font-size-small);
+  background-color: var(--txt-black);
+  color: var(--bg-light-peach);
+  font-family: var(--font-bold-fourth);
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.LandingPageCardDetailPricing > p {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: var(--txt-black);
+  font-weight: var(--font-bold-second);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media screen and (max-width: 960px) {
+  .LandingPageCardDetailPricingViewDetailsButton {
+    font-size: var(--font-size-extra-small);
+  }
+  .LandingPageCardDetailPricing > p {
+    font-size: var(--font-size);
+  }
+}

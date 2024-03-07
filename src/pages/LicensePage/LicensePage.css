@@ -1,0 +1,51 @@
+.licencePageContainer {
+  background-color: var(--bg-light-peach);
+  position: relative;
+}
+.licencePage {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  padding: 20px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--bg-gray);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.licencePageHeader > h1 {
+  font-size: var(--font-size);
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.licencePageDetails {
+  position: relative;
+}
+.licencePageDetail > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.licencePageDetail > ul > li {
+  list-style: decimal;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.licencePageDetail > ul > li > h1 {
+  font-size: var(--font-size-small);
+  letter-spacing: 0.6px;
+}
+.licencePageDetail > ul > li > p {
+  font-size: var(--font-size-extra-small);
+  letter-spacing: 0.3px;
+  line-height: 1.6em;
+}
+br {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .licencePage {
+    width: 98%;
+  }
+}
