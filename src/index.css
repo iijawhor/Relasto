@@ -1,12 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: system-ui;
+  box-sizing: border-box;
 }
 * {
   margin: 0;
   padding: 0;
 }
 button,
+input,
 li,
 h1,
 h2,
@@ -16,15 +19,61 @@ h5,
 h6,
 p,
 Link,
-a {
+select,
+option,
+div a {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   background-color: none;
   background: none;
+  border: none;
+  outline: none;
 }
 button,
 Link {
   cursor: pointer;
+}
+:root {
+  --font-family-sans-serif: Manrope, sans-serif;
+  --font-weight-bolder: 800;
+  --font-system-ui: system-ui;
+  --font-bold: 700;
+  --font-bold-second: 600;
+  --font-size-large: 46px;
+  --font-size-semi-large: 36px;
+  --font-size-big: 26px;
+  --font-size: 22px;
+  --font-size-small: 18px;
+  --font-size-extra-small: 16px;
+  --font-size-medium: 26px;
+  --font-bold-third: 500;
+  --font-bold-fourth: 400;
+  --placeholder-font-size: 18px;
+  --font-bold-fifth: 300;
+  --font-bold-sixth: 200;
+  --bg-dark-gray: #dbdbdb;
+  --bg-light-gray: #f3f3f3;
+  --bg-gray: #c0c0c0;
+  --bg-white: #ffffff;
+  --bg-black: #191919;
+  --txt-black: #191919;
+  --bg-white-pink: #fff7f0;
+  --bg-light-peach: #fbeee6;
+  --bg-light-orange: #ffe0ce;
+  --light-pink: #fff9f5;
+  --txt-gray: #626262;
+  --txt-light-gray: #c4c4c4;
+  --txt-orange: #fd650b;
+  --txt-light-orange: #ff8b46;
+}
+::-webkit-scrollbar {
+  background-color: var(--bg-black);
+  height: 5px;
+  width: 5px;
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--txt-orange);
 }
