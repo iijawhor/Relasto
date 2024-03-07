@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Listing.css";
+
 import {
   Button,
   Container,
@@ -7,10 +8,19 @@ import {
   Header,
   Input,
   LandingPageCard,
+  Pagination,
   SearchIcon,
-  featuredProperty
+  propertyData
 } from "../../exports/exports";
-function Listing() {
+
+function Listing({ featuredProperty = true }) {
+  const [data, setData] = useState(propertyData || 0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const dataPerPage = 3;
+  const indexOfLastData = currentPage * dataPerPage;
+  const indexOfFirstData = indexOfLastData - dataPerPage;
+  const currentData = data.slice(indexOfFirstData, indexOfLastData);
+
   return (
     <Container className="listing">
       <Header />
@@ -69,7 +79,7 @@ function Listing() {
         {/* {/* filterinf data lsiting rendred below  */}
         <div className="listingFilteredData">
           <div className="listingfilteredDataContainer">
-            {featuredProperty.map((filteredData) => (
+            {currentData.map((filteredData) => (
               <div className="listingCardContainer" key={filteredData.id}>
                 <LandingPageCard
                   featuredProperty={featuredProperty}
@@ -87,13 +97,16 @@ function Listing() {
             ))}
           </div>
           <div className="listingFilteredDataPagination">
-            <Button name="Previous Page" className="listingPreviousButton" />
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
-            <Button name="Next Page" className="listingNextButton" />
+            <Pagination
+              dataPerPage={dataPerPage}
+              setData={setData}
+              currentData={currentData}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              indexOfFirstData={indexOfFirstData}
+              indexOfLastData={indexOfLastData}
+              data={data}
+            />
           </div>
         </div>
       </div>
